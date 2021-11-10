@@ -22,3 +22,7 @@ Route::get('/', function () {
 });
 
 Route::get('/hello', [HelloLaravelController::class, 'index']); //HelloLaravel表示
+
+Route::get('/viewhello', function () {
+    return view('HelloLaravel');
+});
